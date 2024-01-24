@@ -1,0 +1,53 @@
+
+// const user = {firstname: 'Chris', lastname: 'Bongers', age: 32};
+
+// const {firstname, age} = user;
+// console.log("print", user);
+
+ // defining a type alias :
+type Person ={
+    name:string,
+    age:number;
+    isStudent:boolean;
+   batch?:number;    // this is optional else it will throw error 
+    address:{ city:string, country:string}
+}
+// 
+//     DEFINGING STRUCTURE SCHEMA 
+  
+const person :{
+    name:string,
+    age:number;
+    isStudent:boolean;
+    address:{ city:string, country:string}
+}={
+    name:"Ryan",
+    age :23,
+    isStudent:true,
+    address:{
+        country:"India",
+        city:"Pune"
+    }
+}
+//   person.address.city= 123  
+// showing an error 
+console.log(person.address.city);
+
+  TUPLES: dta structre that allows you to store same / fixed size collections
+ 
+UNIONS:
+ability to combine one or two types.
+Two or more data types are combined using the pipe symbol (|) to denote a Union Type. 
+   EXAMPLE:
+  var val:string|number   
+val = 12 
+console.log("numeric value of val "+val) 
+val = "This is a string" 
+console.log("string value of val "+val)
+-------------------------------------------------------
+       GENERICS:    used with multiple data types 
+
+function print<T>(value:T):T{
+  return value ;
+}
+const n:number = print<number>(value:42);
