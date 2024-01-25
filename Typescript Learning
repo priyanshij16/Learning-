@@ -1,0 +1,23 @@
+        ACCESS MODIFIERS:
+public, pvt , protected : public can access outside the class but not private .
+While protected similar to pvt , can acccess using derived class.
+
+   SEQUELIZE LEARNING:
+ 1 get fun:
+   get() {
+      const rawValue = this.getDataValue('username');
+      return rawValue ? rawValue.toUpperCase() : null;
+    } 
+  2 Set function():
+A setter is a set() function defined for one column in the model definition. It receives the value being set:
+
+const User = sequelize.define('user', {
+  username: DataTypes.STRING,
+  password: {
+    type: DataTypes.STRING,
+    set(value) {
+      // Storing passwords in plaintext in the database is terrible.
+      // Hashing the value with an appropriate cryptographic hash function is better.
+      this.setDataValue('password', hash(value));
+    }
+ 
