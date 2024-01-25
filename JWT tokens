@@ -1,0 +1,18 @@
+   JSON Web Tokens 
+there is a drawback in statless authentication:
+  Authe  ---> Statless 
+         ---> Statefull 
+
+drawback: 1 server lost >>then user log out/ lost 
+          2  ise server memory 
+
+
+  client ---->  dbase 
+ Dbase will store user'data(email,name,id) 
+ JWT : Store data in hash format and transfer that in form 1 COOKIE    2  RESPONSE  
+ 
+Cookies Feature :
+1 domain specific  ( Also we can change our Domain -- ex google.com or any but then we wouldn't be able to see the hash cookie )
+
+2 expiery date (after this time your loggin info or data will be lost )
+
