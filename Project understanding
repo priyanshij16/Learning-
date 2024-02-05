@@ -1,0 +1,63 @@
+                               INFO RELATED TO PROJECT:
+BitBucket is a cloud-based service that helps developers store and manage their code, as well as track and control the changes to their code.
+BitBucket provides a cloud-based Git repository hosting service. 
+ Additionally, BitBuckets provides a variety of services like it gives teams to collaborate and create projects, test and deploy the code.
+
+Utils :Utils folder consists of some repeatedly used functions that are commonly used in the project.
+
+src >
+models -- Aggregator 
+       -- alert   >> config, controllers, core,mig, models, router,seeder,services ,utils
+       -- audit >> 
+       --authmiddleware 
+       --device 
+
+ >> Alert --
+config : logger : pkg for logging , not to use console.log()
+controller:
+core : >> Alert -- config,controll, core, mig, models, routes, seeder, services, utils 
+ -----------------------------------------------------------------------------------------------------------------
+Notifictaion mngment service :Managing subscription of notification , list all noti on portal
+Report Managmnt service: View reports for all transactions based on filters like today, yesterday, this week,last week, this month, last month, custom filter.
+
+>>>>>
+    FUCTIONALITY:
+ 1 Org mangament service :
+create org: will include create profiles of an org with Name, add, contact, billing add
+view , delete , view all users in org, activate / deactivae 
+
+2 Role and Permsission Service:
+Role and permission- create,update , delete, view ,list 
+ add/remove permission to role 
+
+3 Health mngment: list devices health status  
+view device health history 
+device health will be pushed by device
+
+ Document Mangemnet service :
+1 upload content/document 
+2 remove , View, list 
+
+middleware :pub sub middleware will provide the interface to msg broker (Rabbitmq)that manges th eventdriven notification to subscriber of data objects that are being
+owned and managed by org.
+
+Event service will provide inerface for pushing events sucs as alerst
+
+
+------------------------------------------------------
+ DATBASE mangement patterns for microservices :
+1 database per service    2 shared databse 
+
+1  database per service : each microserivce manges its own data .
+2  shared : single dbase is shared among services 
+
+
+
+
+
+
+
+
+
+
+
