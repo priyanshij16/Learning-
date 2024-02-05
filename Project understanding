@@ -49,10 +49,30 @@ Event service will provide inerface for pushing events sucs as alerst
 1 database per service    2 shared databse 
 
 1  database per service : each microserivce manges its own data .
-2  shared : single dbase is shared among services 
+2  shared : single dbase is shared among services
+
+----------------------------
+    SERVICES SPECIFICATION:
+            API Gateway Functionality:
+ handles rqst aggresgations 
+support :
+ authentication , service integeration ,  Response caching, load balancing , logging , tracing 
+
+                
+                          Token-Authentication and authorization
+a user will be authenticated through single sign in and a token 
+All authentication as well as authorization validation is done at API Gateway. 
+moreover this happens within the services 
 
 
 
+       Handling of events from devices and services
+
+Event driven communication between services
+
+Notification Service
+
+Logging
 
 
 
