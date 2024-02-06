@@ -1,0 +1,9 @@
+1 device : resp for handling & manging device ,assigned to diff org info (device usage, tracking components )
+device--> h/w, s/w component like printer, kiosk 
+
+2 alert : alert mngment serivces manages the core alert system which facilates  , alert mesg that are sent to the uswers os system via alert managemnet service 
+alert are evvents require action . 
+------------------------------------------------------------------------------
+               INDEXING IN DBASE :
+indexing improves dbase performance by minimizing no and data structure technique used to locate and quickly access data table             
+            
