@@ -1,0 +1,2 @@
+ACID : Atomicity Consistency Isolation Dependency 
+ Atomicity : It further means that the operation should not break in between or execute partially.
