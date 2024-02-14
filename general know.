@@ -1,0 +1,18 @@
+ let { startDate, endDate }: any = req.query;
+ The code is using object destructuring to extract the startDate and endDate properties from the req.query object
+
+req.query: This likely refers to an object containing the query parameters from an HTTP request. 
+In frameworks like Express.js, req.query represents the query parameters parsed from the URL.
+
+So, putting it all together, this line of code extracts the startDate and endDate properties from the req.query object and assigns them to 
+variables with the same names, and TypeScript is instructed to treat these variables as having the type any, meaning their types are not strictly enforced.
+                               -------------------------------------------------------
+ Stored Procedures :
+A stored procedure is a prepared SQL code that you can save, so the code can be reused over and over again.
+ex : CREATE PROCEDURE A(name) AS SELECT * FROM Customer;
+>>  EXEC A;
+
+                                   --------------------------------
+ function 1 readDataForCustomerPayment()
+ verall, this code ensures that the count of API calls for customer payments is accurately managed on a daily basis for each organization.
+It prevents organizations from exceeding the maximum allowed number of transactions per day and updates the counter accordingly.
