@@ -2,3 +2,17 @@
 .split() turns the values into an array starting at 0.
 
 so if we did date = date.split('T') then data[0] is = "2017-05-21" and data[1] is = "00:00:00"
+
+--------------------
+>>hashmaps vs database :
+ Databse store data in disk while hashmaps stores data in RAM . ,for larger data we cant use maps coz user dont have enough ram memory 
+ >> int vs BIGint:
+Bigint : used when int exceeds range limit .
+----------------------------------------
+          PROM -CLIENT 
+this pkg used for to provides metrics to graffana (tool which show pictorial representation of data)
+like in our project show data of fotfall 
+-----------------------
+ levels :
+
+
