@@ -1,0 +1,4 @@
+  let presentDate = new Date().toISOString().split('T')[0]
+.split() turns the values into an array starting at 0.
+
+so if we did date = date.split('T') then data[0] is = "2017-05-21" and data[1] is = "00:00:00"
