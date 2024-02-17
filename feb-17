@@ -1,0 +1,8 @@
+ How hmaps and database are diff?
+hashmaps resides in RAM , database resides on disk . 
+  ----------------------------------------
+ Q   Why moment pkg used ?
+- In Node.js, moment.js is a popular JavaScript library for parsing, validating, manipulating, and formatting dates.
+It provides an easy-to-use API to work with dates and times, making tasks like date arithmetic, formatting, and parsing .
+
+
