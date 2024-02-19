@@ -26,3 +26,5 @@ let options: any = {
 
 HS256 is a symmetric algorithm that shares one secret key between the identity provider and your application. 
 The same key is used to sign a JWT and verify that signature.
+ --------------------------------------------------------------------
+axios : 
