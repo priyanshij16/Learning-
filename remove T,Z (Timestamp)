@@ -1,0 +1,28 @@
+>> for this i used for of loop 
+>> just like presenDate variable  let presentDate = new Date().toISOString().split('T')[0]
+>> bs don't add .split (')
+>> moreover use .replace function seprately  
+
+for (let item of result) {
+         let upDate = new Date(item.Timestamp).toISOString();
+           result = upDate.replace(/[TZ]/g, ' ')
+}
+ // also here /g means select combination all occerence of string and allows them to remove :
+
+-------------------------------------------
+ >>second method is using moment fuction:
+
+    var momentDate = timePicker.data("DateTimePicker").date();
+    console.log(momentDate.format());
+
+ ------------------------------------------
+>> third method is by parsing the date string 
+var datetime = new Date();
+var now = datetime.toISOString().replace('Z', '').replace('T', '');
+--------------------------------------------
+let options: any = {
+        algorithm: 'HS256',
+      }
+
+HS256 is a symmetric algorithm that shares one secret key between the identity provider and your application. 
+The same key is used to sign a JWT and verify that signature.
