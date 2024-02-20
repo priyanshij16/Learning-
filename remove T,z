@@ -1,0 +1,12 @@
+//  logger.info(" Before Modification", item.Timestamp);
+            let upDate = new Date(item.Timestamp).toISOString();
+
+              item.Timestamp = upDate.replace(/[TZ]/g , ' ').replace('.000', '');
+          //    logger.info(" After Modification", item.Timestamp);
+           
+// ------------------------
+     USING MOMENT FUNCTION : 
+          let m = moment(item.Timestamp);
+      item.Timestamp= m.format('YYYY-MM-DD HH:mm:ss');
+           logger.info(" After Modification", item.Timestamp);
+          
